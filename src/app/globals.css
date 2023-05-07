@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,43 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@layer base {
+  h1 {
+    @apply text-2xl font-semibold;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply text-lg font-semibold;
+  }
+  h4 {
+    @apply text-base font-bold;
+  }
+  h5 {
+    @apply text-base font-semibold;
+  }
+  h6 {
+    @apply text-sm font-semibold;
+  }
+}
+
+@layer components {
+  .neumorphism-body {
+    border-radius: 20px;
+    background: linear-gradient(315deg, #473e4e, #554a5d);
+    box-shadow: -10px -10px 10px #433b4a, 10px 10px 10px #5b4f64;
+  }
+
+  .neumorphism-head {
+    border-radius: 20px;
+    background: linear-gradient(145deg, #33313f, #3d3a4b);
+    box-shadow: 10px 10px 10px #302e3c, -10px -10px 10px #423e51;
+  }
+  .radio-xxs {
+    height: 0.8rem /* 16px */;
+    width: 0.8rem /* 16px */;
+  }
 }
