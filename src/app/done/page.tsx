@@ -7,14 +7,15 @@ export default function Done() {
   const router = useRouter();
 
   useEffect(() => {
-    // disable back button on modern browsers
-    window.history.pushState(null, "", window.location.href);
-    window.onpopstate = function (event) {
-      window.history.go(3);
-    };
+    // set timeout for 3 seconds before redirecting to destination page
+    const timeoutId = setTimeout(() => {
+      router.push("/");
+    }, 3000);
 
-    // redirect to home page
-    router.push("/");
+    // clear timeout when component unmounts
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, []);
   return (
     <div className="flex flex-col justify-center items-center mt-32">
