@@ -10,7 +10,7 @@ export default function Done() {
     // set timeout for 3 seconds before redirecting to destination page
     const timeoutId = setTimeout(() => {
       router.push("/");
-    }, 3000);
+    }, 5000);
 
     // clear timeout when component unmounts
     return () => {
