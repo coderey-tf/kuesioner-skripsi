@@ -37,6 +37,18 @@ model DataResponden {
   hitung1     Float
   hitung2     Float
   hitung3     Float
+  hitung4     Float
+  hitung5     Float
+  hitung6     Float
+  hitung7     Float
+  hitung8     Float
+  hitung9     Float
+  hitung10    Float
+  hitung11    Float
+  hitung12    Float
+  hitung13    Float
+  hitung14    Float
+  hitung15    Float
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }

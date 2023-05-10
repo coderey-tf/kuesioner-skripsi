@@ -17,7 +17,7 @@ export default function Input(props: InputProps) {
         placeholder={props.placeholder}
         value={props.value}
         onChange={props.onChange}
-        className="input input-bordered w-[430px]   placeholder-gray-600"
+        className="input input-bordered w-full   placeholder-gray-600"
         required
       />
     </div>

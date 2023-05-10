@@ -16,6 +16,18 @@ export async function POST(request: Request) {
       hitung1: body.hitung1,
       hitung2: body.hitung2,
       hitung3: body.hitung3,
+      hitung4: body.hitung4,
+      hitung5: body.hitung5,
+      hitung6: body.hitung6,
+      hitung7: body.hitung7,
+      hitung8: body.hitung8,
+      hitung9: body.hitung9,
+      hitung10: body.hitung10,
+      hitung11: body.hitung11,
+      hitung12: body.hitung12,
+      hitung13: body.hitung13,
+      hitung14: body.hitung14,
+      hitung15: body.hitung15
     }
   })
   return NextResponse.json(dataResponden)

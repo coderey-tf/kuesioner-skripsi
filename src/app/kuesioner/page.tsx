@@ -19,18 +19,23 @@ export default function Kuesioner() {
 
     console.log("Radio value: ", radioValue);
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const handleModal = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <div className=" neumorphism-head">
         <h3 className="py-4 px-4">Penjelasan & Petunjuk Pengisian Kuesioner</h3>
-        <div className=" p-3 px-4 indent-8 text-xs text-justify bg-secondary ">
+        <div className="py-4 px-4 indent-8 text-xs text-justify bg-secondary ">
           Sekilas tentang Analytic Hierarcy Process (AHP), AHP adalah salah satu
           tool (Alat Bantu) dalam penelitian yang cocok digunakan untuk
           pemilihan kandidat atas pengurutan prioritas yang dikembangkan oleh
           Thomas L. Saaty.
         </div>
         <div className="divider bg-secondary  m-0 "></div>
-        <div className="py-4 pt-1 px-4 bg-secondary">
+        <div className="py-4 px-4 bg-secondary rounded-b-[20px]">
           <Image
             src="/tutor.png"
             alt="petunjuk"
@@ -105,7 +110,7 @@ export default function Kuesioner() {
               onChange={handleChange}
               name="radio-2"
               value="Factor A & Factor B is Equally Important"
-              className="radio radio-success radio-xs sm:radio-sm"
+              className="radio radio-warning radio-xs sm:radio-sm"
             />
 
             <input
@@ -156,9 +161,34 @@ export default function Kuesioner() {
             <Link href="/">
               <Button title="Kembali" />
             </Link>
-            <Link href="/kuesioner/info-responden">
-              <Button title="Selanjutnya" />
-            </Link>
+
+            <Button title="Selanjutnya" onClick={handleModal} />
+          </div>
+          <div
+            className={
+              isOpen ? "modal modal-open bg-black/50 backdrop-blur-sm" : "modal"
+            }
+            id="my-modal-2"
+          >
+            <div className="modal-box bg-primary">
+              <h4 className="font-bold text-base">Selamat!</h4>
+              <p className="py-4 text-sm">
+                Anda telah melewati halaman penjelasan & petunjuk pengisian
+                kuesioner.
+              </p>
+              <p className="py-4 text-sm">
+                Selanjutnya anda akan masuk ke halaman pengisian kuesioner.
+              </p>
+              <small className="text-xs opacity-50">
+                *Hint: jika ingin melihat kembali petunjuk pengisian silahkan
+                klik popup button disebelah kanan layar anda!
+              </small>
+              <div className="modal-action">
+                <a href="/kuesioner/info-responden" className="btn">
+                  Yay!
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

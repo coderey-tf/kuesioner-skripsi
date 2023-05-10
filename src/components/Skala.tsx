@@ -35,7 +35,6 @@ export default function Skala({
           onClick={(e) => console.log((e.target as HTMLInputElement).value)}
           onChange={onChange}
           className="radio radio-success radio-xs sm:radio-sm"
-          defaultChecked
         />
 
         <input

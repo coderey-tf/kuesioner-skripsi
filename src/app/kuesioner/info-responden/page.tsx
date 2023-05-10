@@ -19,6 +19,18 @@ export default function InformasiResponden() {
   const [hitung1, setHitung1] = useState("");
   const [hitung2, setHitung2] = useState("");
   const [hitung3, setHitung3] = useState("");
+  const [hitung4, setHitung4] = useState("");
+  const [hitung5, setHitung5] = useState("");
+  const [hitung6, setHitung6] = useState("");
+  const [hitung7, setHitung7] = useState("");
+  const [hitung8, setHitung8] = useState("");
+  const [hitung9, setHitung9] = useState("");
+  const [hitung10, setHitung10] = useState("");
+  const [hitung11, setHitung11] = useState("");
+  const [hitung12, setHitung12] = useState("");
+  const [hitung13, setHitung13] = useState("");
+  const [hitung14, setHitung14] = useState("");
+  const [hitung15, setHitung15] = useState("");
 
   const router = useRouter();
   const handleChange1 = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -29,6 +41,42 @@ export default function InformasiResponden() {
   };
   const handleChange3 = (e: React.ChangeEvent<HTMLInputElement>) => {
     setHitung3(e.target.value);
+  };
+  const handleChange4 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung4(e.target.value);
+  };
+  const handleChange5 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung5(e.target.value);
+  };
+  const handleChange6 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung6(e.target.value);
+  };
+  const handleChange7 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung7(e.target.value);
+  };
+  const handleChange8 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung8(e.target.value);
+  };
+  const handleChange9 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung9(e.target.value);
+  };
+  const handleChange10 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung10(e.target.value);
+  };
+  const handleChange11 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung11(e.target.value);
+  };
+  const handleChange12 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung12(e.target.value);
+  };
+  const handleChange13 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung13(e.target.value);
+  };
+  const handleChange14 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung14(e.target.value);
+  };
+  const handleChange15 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung15(e.target.value);
   };
 
   const handleSubmited = async (e: SyntheticEvent) => {
@@ -42,19 +90,54 @@ export default function InformasiResponden() {
       hitung1: Number(hitung1),
       hitung2: Number(hitung2),
       hitung3: Number(hitung3),
+      hitung4: Number(hitung4),
+      hitung5: Number(hitung5),
+      hitung6: Number(hitung6),
+      hitung7: Number(hitung7),
+      hitung8: Number(hitung8),
+      hitung9: Number(hitung9),
+      hitung10: Number(hitung10),
+      hitung11: Number(hitung11),
+      hitung12: Number(hitung12),
+      hitung13: Number(hitung13),
+      hitung14: Number(hitung14),
+      hitung15: Number(hitung15),
     });
     setName("");
     setUniv("");
     setProdi("");
     setNegara("");
     setStatus("");
+    setHitung1("");
+    setHitung2("");
+    setHitung3("");
+    setHitung4("");
+    setHitung5("");
+    setHitung6("");
+    setHitung7("");
+    setHitung8("");
+    setHitung9("");
+    setHitung10("");
+    setHitung11("");
+    setHitung12("");
+    setHitung13("");
+    setHitung14("");
+    setHitung15("");
     router.refresh();
+  };
+  const [isOpen, setIsOpen] = useState(false);
+  const handleModal = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleDone = () => {
+    router.push("/done");
   };
   return (
     <form onSubmit={handleSubmited} className="form-control w-full ">
       <div className=" neumorphism-head ">
         <h3 className="py-4 px-4">Informasi Responden</h3>
-        <div className="pl-6 pt-5  text-xs text-justify bg-secondary rounded-b-[20px] pb-5 ">
+        <div className="px-5 py-3  text-xs text-justify bg-secondary rounded-b-[20px] ">
           <Input
             label="Nama Lengkap"
             value={name}
@@ -97,7 +180,6 @@ export default function InformasiResponden() {
                     className="radio radio-success radio-xs"
                     value="Sudah Lulus"
                     onChange={(e: any) => setStatus(e.target.value)}
-                    defaultChecked
                   />
                   <span className="label-text indent-3">Sudah Lulus</span>
                 </div>
@@ -117,135 +199,177 @@ export default function InformasiResponden() {
         </div>
       </div>
       <div className="neumorphism-head mt-5">
-        <h3 className="py-4 px-4">Jawaban Responden</h3>
-        <div className=" py-3 px-4 text-xs space-y-10  bg-secondary rounded-b-[20px] ">
-          <Skala
-            no="1. "
-            question="Faktor biaya vs Faktor Reputasi Kampus. Mana yang lebih penting?"
-            faktor1="Biaya"
-            faktor2="Reputasi Kampus"
-            onChange={handleChange1}
-            radioName="question1"
-          />
-          <Skala
-            no="2. "
-            question="Faktor biaya vs Faktor Ketersediaan Beasiswa. Mana yang lebih penting?"
-            faktor1="Biaya"
-            faktor2="Ketersediaan Beasiswa"
-            onChange={handleChange2}
-            radioName="question2"
-          />
-          <Skala
-            no="3. "
-            question="Faktor biaya vs Faktor Fasilitas Pendidikan. Mana yang lebih penting?"
-            faktor1="Biaya"
-            faktor2="Fasilitas Pendidikan"
-            onChange={handleChange3}
-            radioName="question3"
-          />
-          {/* <div className="mt-2 grid grid-cols-9 justify-items-center">
-            <input
-              type="radio"
-              name="radio-2"
-              value="Factor A is Extremely Importance rather than Factor B"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              className="radio radio-success radio-xs sm:radio-sm"
-              defaultChecked
+        <h3 className="py-4 px-4">Pertanyaan Responden</h3>
+        <div className="pt-2 pb-4 px-5 text-xs bg-secondary rounded-b-[20px] ">
+          <div className=" space-y-10 ">
+            <Skala
+              no="1. "
+              question="Faktor biaya vs Faktor Reputasi Kampus. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Reputasi Kampus"
+              onChange={handleChange1}
+              radioName="question1"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor A is Very Strongly Importance rather than Factor B"
-              className="radio radio-success radio-xs sm:radio-sm"
+            <Skala
+              no="2. "
+              question="Faktor biaya vs Faktor Ketersediaan Beasiswa. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Ketersediaan Beasiswa"
+              onChange={handleChange2}
+              radioName="question2"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor A is Strongly Importance rather than Factor B"
-              className="radio radio-success radio-xs sm:radio-sm"
+            <Skala
+              no="3. "
+              question="Faktor biaya vs Faktor Fasilitas Pendidikan. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Fasilitas Pendidikan"
+              onChange={handleChange3}
+              radioName="question3"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor A is Moderately Importance rather than Factor B"
-              className="radio radio-success radio-xs sm:radio-sm "
+            <Skala
+              no="4. "
+              question="Faktor biaya vs Faktor Kualitas Akademik. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Kualitas Akademik"
+              onChange={handleChange4}
+              radioName="question4"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor A & Factor B is Equally Important"
-              className="radio radio-success radio-xs sm:radio-sm"
+            <Skala
+              no="5. "
+              question="Faktor biaya vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Peluang Kerja"
+              onChange={handleChange5}
+              radioName="question5"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor B is Moderately Importance rather than Factor A"
-              className="radio radio-success radio-xs sm:radio-sm"
+            <Skala
+              no="6. "
+              question="Faktor Reputasi Kampus vs Faktor Ketersediaan Beasiswa. Mana yang lebih penting?"
+              faktor1="Reputasi Kampus"
+              faktor2="Ketersediaan Beasiswa"
+              onChange={handleChange6}
+              radioName="question6"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor B is Strongly Importance rather than Factor A"
-              className="radio radio-success radio-xs sm:radio-sm "
+            <Skala
+              no="7. "
+              question="Faktor Reputasi Kampus vs Faktor Fasilitas Pendidikan. Mana yang lebih penting?"
+              faktor1="Reputasi Kampus"
+              faktor2="Fasilitas Pendidikan"
+              onChange={handleChange7}
+              radioName="question7"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor B is Very Strongly Importance rather than Factor A"
-              className="radio radio-success radio-xs sm:radio-sm"
+            <Skala
+              no="8. "
+              question="Faktor Reputasi Kampus vs Faktor Kualitas Akademik. Mana yang lebih penting?"
+              faktor1="Reputasi Kampus"
+              faktor2="Kualitas Akademik"
+              onChange={handleChange8}
+              radioName="question8"
             />
-
-            <input
-              type="radio"
-              onClick={(e) => console.log((e.target as HTMLInputElement).value)}
-              name="radio-2"
-              value="Factor B is Extremely Importance rather than Factor A"
-              className="radio radio-success radio-xs sm:radio-sm"
+            <Skala
+              no="9. "
+              question="Faktor Reputasi Kampus vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Reputasi Kampus"
+              faktor2="Peluang Kerja"
+              onChange={handleChange9}
+              radioName="question9"
             />
-          </div> */}
-          {/* <button type="submit">Submit</button> */}
+            <Skala
+              no="10. "
+              question="Faktor Ketersediaan Beasiswa vs Faktor Fasilitas Pendidikan. Mana yang lebih penting?"
+              faktor1="Ketersediaan Beasiswa"
+              faktor2="Fasilitas Pendidikan"
+              onChange={handleChange10}
+              radioName="question10"
+            />
+            <Skala
+              no="11. "
+              question="Faktor Ketersediaan Beasiswa vs Faktor Kualitas Akademik. Mana yang lebih penting?"
+              faktor1="Ketersediaan Beasiswa"
+              faktor2="Kualitas Akademik"
+              onChange={handleChange11}
+              radioName="question11"
+            />
+            <Skala
+              no="12. "
+              question="Faktor Ketersediaan Beasiswa vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Ketersediaan Beasiswa"
+              faktor2="Peluang Kerja"
+              onChange={handleChange12}
+              radioName="question12"
+            />
+            <Skala
+              no="13. "
+              question="Faktor Fasilitas Pendidikan vs Faktor Kualitas Akademik. Mana yang lebih penting?"
+              faktor1="Fasilitas Pendidikan"
+              faktor2="Kualitas Akademik"
+              onChange={handleChange13}
+              radioName="question13"
+            />
+            <Skala
+              no="14. "
+              question="Faktor Fasilitas Pendidikan vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Fasilitas Pendidikan"
+              faktor2="Peluang Kerja"
+              onChange={handleChange14}
+              radioName="question14"
+            />
+            <Skala
+              no="15. "
+              question="Faktor Kualitas Akademik vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Kualitas Akademik"
+              faktor2="Peluang Kerja"
+              onChange={handleChange15}
+              radioName="question15"
+            />
+          </div>
 
-          {/* <Input
-            label="Hitung 1"
-            value={hitung1}
-            type={"text"}
-            placeholder="Isi dengan nama lengkapmu"
-            onChange={(e: any) => setHitung1(e.target.value)}
-          />
-          <Input
-            label="Hitung 2"
-            value={hitung2}
-            type={"text"}
-            placeholder="Isi dengan nama universitasmu"
-            onChange={(e: any) => setHitung2(e.target.value)}
-          />
-          <Input
-            label="Hitung 3"
-            value={hitung3}
-            type={"text"}
-            placeholder="Isi dengan nama program studimu"
-            onChange={(e: any) => setHitung3(e.target.value)}
-          /> */}
           <div className="flex justify-between mt-7">
             <Link href="/kuesioner">
               <Button title="Kembali" />
             </Link>
 
-            <Button title="Selanjutnya" />
+            <button
+              type="button"
+              className="btn btn-xs w-auto sm:btn-sm md:btn-md capitalize text-[10px]  text-primary bg-primary border-primary hover:bg-inherit hover:text-primary"
+              onClick={handleModal}
+            >
+              Submit
+            </button>
+          </div>
+          <div
+            className={
+              isOpen ? "modal modal-open bg-black/50 backdrop-blur-sm" : "modal"
+            }
+            id="my-modal-2"
+          >
+            <div className="modal-box bg-primary">
+              <h4 className="font-bold text-base">Terima Kasih!</h4>
+              <p className="py-4 text-sm">
+                Apakah anda sudah yakin dengan jawaban anda?
+              </p>
+
+              <small className="text-xs opacity-50">
+                *Hint: jika ingin melihat kembali petunjuk pengisian silahkan
+                klik popup button disebelah kanan layar anda!
+              </small>
+              <div className="modal-action">
+                <button
+                  type="button"
+                  className="btn btn-sm btn-error text-xs "
+                  onClick={handleModal}
+                >
+                  Saya belum yakin
+                </button>
+                <button
+                  type="submit"
+                  className="btn btn-sm btn-success text-xs"
+                  onClick={handleDone}
+                >
+                  Sudah Yakin
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

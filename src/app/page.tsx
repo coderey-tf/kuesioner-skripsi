@@ -3,13 +3,14 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="neumorphism-body p-3 px-4">
+    <div className="neumorphism-head ">
       {/* <div className=" w-[60%] mx-auto my-10"> */}
-      <h4 className="text-center">
+      <h4 className="py-4 px-4 text-center bg-secondary rounded-t-[20px]">
         Kuesioner Faktor Pengaruh Pemilihan Universitas Mahasiswa Indonesia
         Untuk Studi S2 Di Luar Negeri
       </h4>
-      <div className="space-y-2 mt-3 indent-8 text-xs text-justify flex flex-col">
+      <div className="divider bg-secondary  m-0 "></div>
+      <div className="py-4 px-4 space-y-2 indent-8 text-xs text-justify flex flex-col bg-secondary rounded-b-[20px]">
         <p>
           Kuesioner ini merupakan Kuesioner Pairwise Comparison (Perbandingan
           Berpasangan) pada faktor-faktor yang mendukung keputusan mahasiswa S2
@@ -43,10 +44,11 @@ export default function Home() {
           membantu saya dalam mengumpulkan data yang diharapkan berguna bagi
           pengembangan pendidikan di Indonesia kedepan.
         </p>
-
-        <Link href="/kuesioner">
-          <Button title="Selanjutnya" />
-        </Link>
+        <div className="flex justify-end mt-7">
+          <Link href="/kuesioner">
+            <Button title="Selanjutnya" />
+          </Link>
+        </div>
       </div>
     </div>
   );
