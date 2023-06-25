@@ -28,7 +28,7 @@ model Post {
 }
 
 model DataResponden {
-  id          Int      @id @default(autoincrement())
+  id          Int    @id @default(autoincrement())
   name        String
   universitas String
   prodi       String
@@ -49,6 +49,28 @@ model DataResponden {
   hitung13    Float
   hitung14    Float
   hitung15    Float
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  hitung16    Float
+  hitung17    Float
+  hitung18    Float
+  hitung19    Float
+  hitung20    Float
+  hitung21    Float
+  hitung22    Float
+  hitung23    Float
+  hitung24    Float
+  hitung25    Float
+  hitung26    Float
+  hitung27    Float
+  hitung28    Float
+  hitung29    Float
+  hitung30    Float
+  hitung31    Float
+  hitung32    Float
+  hitung33    Float
+  hitung34    Float
+  hitung35    Float
+  hitung36    Float
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }

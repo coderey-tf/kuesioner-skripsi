@@ -31,6 +31,27 @@ export default function InformasiResponden() {
   const [hitung13, setHitung13] = useState("");
   const [hitung14, setHitung14] = useState("");
   const [hitung15, setHitung15] = useState("");
+  const [hitung16, setHitung16] = useState("");
+  const [hitung17, setHitung17] = useState("");
+  const [hitung18, setHitung18] = useState("");
+  const [hitung19, setHitung19] = useState("");
+  const [hitung20, setHitung20] = useState("");
+  const [hitung21, setHitung21] = useState("");
+  const [hitung22, setHitung22] = useState("");
+  const [hitung23, setHitung23] = useState("");
+  const [hitung24, setHitung24] = useState("");
+  const [hitung25, setHitung25] = useState("");
+  const [hitung26, setHitung26] = useState("");
+  const [hitung27, setHitung27] = useState("");
+  const [hitung28, setHitung28] = useState("");
+  const [hitung29, setHitung29] = useState("");
+  const [hitung30, setHitung30] = useState("");
+  const [hitung31, setHitung31] = useState("");
+  const [hitung32, setHitung32] = useState("");
+  const [hitung33, setHitung33] = useState("");
+  const [hitung34, setHitung34] = useState("");
+  const [hitung35, setHitung35] = useState("");
+  const [hitung36, setHitung36] = useState("");
 
   const router = useRouter();
   const handleChange1 = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -78,6 +99,69 @@ export default function InformasiResponden() {
   const handleChange15 = (e: React.ChangeEvent<HTMLInputElement>) => {
     setHitung15(e.target.value);
   };
+  const handleChange16 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung16(e.target.value);
+  };
+  const handleChange17 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung17(e.target.value);
+  };
+  const handleChange18 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung18(e.target.value);
+  };
+  const handleChange19 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung19(e.target.value);
+  };
+  const handleChange20 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung20(e.target.value);
+  };
+  const handleChange21 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung21(e.target.value);
+  };
+  const handleChange22 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung22(e.target.value);
+  };
+  const handleChange23 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung23(e.target.value);
+  };
+  const handleChange24 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung24(e.target.value);
+  };
+  const handleChange25 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung25(e.target.value);
+  };
+  const handleChange26 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung26(e.target.value);
+  };
+  const handleChange27 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung27(e.target.value);
+  };
+  const handleChange28 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung28(e.target.value);
+  };
+  const handleChange29 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung29(e.target.value);
+  };
+  const handleChange30 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung30(e.target.value);
+  };
+  const handleChange31 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung31(e.target.value);
+  };
+  const handleChange32 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung32(e.target.value);
+  };
+  const handleChange33 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung33(e.target.value);
+  };
+  const handleChange34 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung34(e.target.value);
+  };
+  const handleChange35 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung35(e.target.value);
+  };
+  const handleChange36 = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHitung36(e.target.value);
+  };
 
   const handleSubmited = async (e: SyntheticEvent) => {
     e.preventDefault();
@@ -102,6 +186,27 @@ export default function InformasiResponden() {
       hitung13: Number(hitung13),
       hitung14: Number(hitung14),
       hitung15: Number(hitung15),
+      hitung16: Number(hitung16),
+      hitung17: Number(hitung17),
+      hitung18: Number(hitung18),
+      hitung19: Number(hitung19),
+      hitung20: Number(hitung20),
+      hitung21: Number(hitung21),
+      hitung22: Number(hitung22),
+      hitung23: Number(hitung23),
+      hitung24: Number(hitung24),
+      hitung25: Number(hitung25),
+      hitung26: Number(hitung26),
+      hitung27: Number(hitung27),
+      hitung28: Number(hitung28),
+      hitung29: Number(hitung29),
+      hitung30: Number(hitung30),
+      hitung31: Number(hitung31),
+      hitung32: Number(hitung32),
+      hitung33: Number(hitung33),
+      hitung34: Number(hitung34),
+      hitung35: Number(hitung35),
+      hitung36: Number(hitung36),
     });
     setName("");
     setUniv("");
@@ -123,6 +228,29 @@ export default function InformasiResponden() {
     setHitung13("");
     setHitung14("");
     setHitung15("");
+    setHitung16("");
+    setHitung17("");
+    setHitung18("");
+    setHitung19("");
+    setHitung20("");
+    setHitung21("");
+    setHitung22("");
+    setHitung23("");
+    setHitung24("");
+    setHitung25("");
+    setHitung26("");
+    setHitung27("");
+    setHitung28("");
+    setHitung29("");
+    setHitung30("");
+    setHitung31("");
+    setHitung32("");
+    setHitung33("");
+    setHitung34("");
+    setHitung35("");
+    setHitung36("");
+    //reset form data
+    //set status to done and refresh page
     router.refresh();
   };
   const [isOpen, setIsOpen] = useState(false);
@@ -204,123 +332,291 @@ export default function InformasiResponden() {
           <div className=" space-y-10 ">
             <Skala
               no="1. "
-              question="Faktor biaya vs Faktor Reputasi Kampus. Mana yang lebih penting?"
+              question="Faktor biaya vs Faktor Reputasi Akademik. Mana yang lebih penting?"
               faktor1="Biaya"
-              faktor2="Reputasi Kampus"
+              faktor2="Reputasi Akademik"
               onChange={handleChange1}
               radioName="question1"
             />
             <Skala
               no="2. "
-              question="Faktor biaya vs Faktor Ketersediaan Beasiswa. Mana yang lebih penting?"
+              question="Faktor biaya vs Faktor Reputasi Pekerja. Mana yang lebih penting?"
               faktor1="Biaya"
-              faktor2="Ketersediaan Beasiswa"
+              faktor2="Reputasi Pekerja"
               onChange={handleChange2}
               radioName="question2"
             />
             <Skala
               no="3. "
-              question="Faktor biaya vs Faktor Fasilitas Pendidikan. Mana yang lebih penting?"
+              question="Faktor biaya vs Faktor Rasio Mahasiswa Fakultas. Mana yang lebih penting?"
               faktor1="Biaya"
-              faktor2="Fasilitas Pendidikan"
+              faktor2="Rasio Mahasiswa Fakultas"
               onChange={handleChange3}
               radioName="question3"
             />
             <Skala
               no="4. "
-              question="Faktor biaya vs Faktor Kualitas Akademik. Mana yang lebih penting?"
+              question="Faktor biaya vs Faktor Sitasi Fakultas. Mana yang lebih penting?"
               faktor1="Biaya"
-              faktor2="Kualitas Akademik"
+              faktor2="Sitasi Fakultas"
               onChange={handleChange4}
               radioName="question4"
             />
             <Skala
               no="5. "
-              question="Faktor biaya vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              question="Faktor biaya vs Faktor Fakultas Internasional. Mana yang lebih penting?"
               faktor1="Biaya"
-              faktor2="Peluang Kerja"
+              faktor2="Fakultas Internasional"
               onChange={handleChange5}
               radioName="question5"
             />
             <Skala
               no="6. "
-              question="Faktor Reputasi Kampus vs Faktor Ketersediaan Beasiswa. Mana yang lebih penting?"
-              faktor1="Reputasi Kampus"
-              faktor2="Ketersediaan Beasiswa"
+              question="Faktor Biaya vs Faktor Rasio Mahasiswa Internasional. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Rasio Mahasiswa Internasional"
               onChange={handleChange6}
               radioName="question6"
             />
             <Skala
               no="7. "
-              question="Faktor Reputasi Kampus vs Faktor Fasilitas Pendidikan. Mana yang lebih penting?"
-              faktor1="Reputasi Kampus"
-              faktor2="Fasilitas Pendidikan"
+              question="Faktor Biaya vs Faktor Jaringan Penelitian Internasional. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Jaringan Penelitian Internasional"
               onChange={handleChange7}
               radioName="question7"
             />
             <Skala
               no="8. "
-              question="Faktor Reputasi Kampus vs Faktor Kualitas Akademik. Mana yang lebih penting?"
-              faktor1="Reputasi Kampus"
-              faktor2="Kualitas Akademik"
+              question="Faktor Biaya vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Biaya"
+              faktor2="Peluang Kerja"
               onChange={handleChange8}
               radioName="question8"
             />
             <Skala
               no="9. "
-              question="Faktor Reputasi Kampus vs Faktor Peluang Kerja. Mana yang lebih penting?"
-              faktor1="Reputasi Kampus"
-              faktor2="Peluang Kerja"
+              question="Faktor Reputasi Akademik vs Faktor Reputasi Pekerja. Mana yang lebih penting?"
+              faktor1="Reputasi Akademik"
+              faktor2="Reputasi Pekerja"
               onChange={handleChange9}
               radioName="question9"
             />
             <Skala
               no="10. "
-              question="Faktor Ketersediaan Beasiswa vs Faktor Fasilitas Pendidikan. Mana yang lebih penting?"
-              faktor1="Ketersediaan Beasiswa"
-              faktor2="Fasilitas Pendidikan"
+              question="Faktor Reputasi Akademik vs Faktor Rasio Mahasiswa Fakultas. Mana yang lebih penting?"
+              faktor1="Reputasi Akademik"
+              faktor2="Rasio Mahasiswa Fakultas"
               onChange={handleChange10}
               radioName="question10"
             />
             <Skala
               no="11. "
-              question="Faktor Ketersediaan Beasiswa vs Faktor Kualitas Akademik. Mana yang lebih penting?"
-              faktor1="Ketersediaan Beasiswa"
-              faktor2="Kualitas Akademik"
+              question="Faktor Reputasi Akademik vs Faktor Sitasi Fakultas. Mana yang lebih penting?"
+              faktor1="Reputasi Akademik"
+              faktor2="Sitasi Fakultas"
               onChange={handleChange11}
               radioName="question11"
             />
             <Skala
               no="12. "
-              question="Faktor Ketersediaan Beasiswa vs Faktor Peluang Kerja. Mana yang lebih penting?"
-              faktor1="Ketersediaan Beasiswa"
-              faktor2="Peluang Kerja"
+              question="Faktor Reputasi Akademik vs Faktor Rasio Fakultas Internasional. Mana yang lebih penting?"
+              faktor1="Reputasi Akademik"
+              faktor2="Rasio Fakultas Internasional"
               onChange={handleChange12}
               radioName="question12"
             />
             <Skala
               no="13. "
-              question="Faktor Fasilitas Pendidikan vs Faktor Kualitas Akademik. Mana yang lebih penting?"
-              faktor1="Fasilitas Pendidikan"
-              faktor2="Kualitas Akademik"
+              question="Faktor Reputasi Akademik vs Faktor Rasio Mahasiswa Internasional. Mana yang lebih penting?"
+              faktor1="Reputasi Akademik"
+              faktor2="Rasio Mahasiswa Internasional"
               onChange={handleChange13}
               radioName="question13"
             />
             <Skala
               no="14. "
-              question="Faktor Fasilitas Pendidikan vs Faktor Peluang Kerja. Mana yang lebih penting?"
-              faktor1="Fasilitas Pendidikan"
-              faktor2="Peluang Kerja"
+              question="Faktor Reputasi Akademik vs Faktor Jaringan Penelitian Internasional. Mana yang lebih penting?"
+              faktor1="Reputasi Akademik"
+              faktor2="Jaringan Penelitian Internasional"
               onChange={handleChange14}
               radioName="question14"
             />
             <Skala
               no="15. "
-              question="Faktor Kualitas Akademik vs Faktor Peluang Kerja. Mana yang lebih penting?"
-              faktor1="Kualitas Akademik"
+              question="Faktor Reputasi Akademik vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Reputasi Akademik"
               faktor2="Peluang Kerja"
               onChange={handleChange15}
               radioName="question15"
+            />
+            <Skala
+              no="16. "
+              question="Faktor Reputasi Pekerja vs Faktor Rasio Mahasiswa Fakultas. Mana yang lebih penting?"
+              faktor1="Reputasi Pekerja"
+              faktor2="Rasio Mahasiswa Fakultas"
+              onChange={handleChange16}
+              radioName="question16"
+            />
+            <Skala
+              no="17. "
+              question="Faktor Reputasi Pekerja vs Faktor Sitasi Fakultas. Mana yang lebih penting?"
+              faktor1="Reputasi Pekerja"
+              faktor2="Sitasi Fakultas"
+              onChange={handleChange17}
+              radioName="question17"
+            />
+            <Skala
+              no="18. "
+              question="Faktor Reputasi Pekerja vs Faktor Rasio Fakultas Internasional. Mana yang lebih penting?"
+              faktor1="Reputasi Pekerja"
+              faktor2="Rasio Fakultas Internasional"
+              onChange={handleChange18}
+              radioName="question18"
+            />
+            <Skala
+              no="19. "
+              question="Faktor Reputasi Pekerja vs Faktor Rasio Mahasiswa Internasional. Mana yang lebih penting?"
+              faktor1="Reputasi Pekerja"
+              faktor2="Rasio Mahasiswa Internasional"
+              onChange={handleChange19}
+              radioName="question19"
+            />
+            <Skala
+              no="20. "
+              question="Faktor Reputasi Pekerja vs Faktor Jaringan Penelitian Internasional. Mana yang lebih penting?"
+              faktor1="Reputasi Pekerja"
+              faktor2="Jaringan Penelitian Internasional"
+              onChange={handleChange20}
+              radioName="question20"
+            />
+            <Skala
+              no="21. "
+              question="Faktor Reputasi Pekerja vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Reputasi Pekerja"
+              faktor2="Peluang Kerja"
+              onChange={handleChange21}
+              radioName="question21"
+            />
+            <Skala
+              no="22. "
+              question="Faktor Rasio Mahasiswa Fakultas vs Faktor Sitasi Fakultas. Mana yang lebih penting?"
+              faktor1="Rasio Mahasiswa Fakultas"
+              faktor2="Sitasi Fakultas"
+              onChange={handleChange22}
+              radioName="question22"
+            />
+            <Skala
+              no="23. "
+              question="Faktor Rasio Mahasiswa Fakultas vs Faktor Rasio Fakultas Internasional. Mana yang lebih penting?"
+              faktor1="Rasio Mahasiswa Fakultas"
+              faktor2="Rasio Fakultas Internasional"
+              onChange={handleChange23}
+              radioName="question23"
+            />
+            <Skala
+              no="24. "
+              question="Faktor Rasio Mahasiswa Fakultas vs Faktor Rasio Mahasiswa Internasional. Mana yang lebih penting?"
+              faktor1="Rasio Mahasiswa Fakultas"
+              faktor2="Rasio Mahasiswa Internasional"
+              onChange={handleChange24}
+              radioName="question24"
+            />
+            <Skala
+              no="25. "
+              question="Faktor Rasio Mahasiswa Fakultas vs Faktor Jaringan Penelitian Internasional. Mana yang lebih penting?"
+              faktor1="Rasio Mahasiswa Fakultas"
+              faktor2="Jaringan Penelitian Internasional"
+              onChange={handleChange25}
+              radioName="question25"
+            />
+            <Skala
+              no="26. "
+              question="Faktor Rasio Mahasiswa Fakultas vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Rasio Mahasiswa Fakultas"
+              faktor2="Peluang Kerja"
+              onChange={handleChange26}
+              radioName="question26"
+            />
+            <Skala
+              no="27. "
+              question="Faktor Sitasi Fakultas vs Faktor Rasio Fakultas Internasional. Mana yang lebih penting?"
+              faktor1="Sitasi Fakultas"
+              faktor2="Rasio Fakultas Internasional"
+              onChange={handleChange27}
+              radioName="question27"
+            />
+            <Skala
+              no="28. "
+              question="Faktor Sitasi Fakultas vs Faktor Rasio Mahasiswa Internasional. Mana yang lebih penting?"
+              faktor1="Sitasi Fakultas"
+              faktor2="Rasio Mahasiswa Internasional"
+              onChange={handleChange28}
+              radioName="question28"
+            />
+            <Skala
+              no="29. "
+              question="Faktor Sitasi Fakultas vs Faktor Jaringan Penelitian Internasional. Mana yang lebih penting?"
+              faktor1="Sitasi Fakultas"
+              faktor2="Jaringan Penelitian Internasional"
+              onChange={handleChange29}
+              radioName="question29"
+            />
+            <Skala
+              no="30. "
+              question="Faktor Sitasi Fakultas vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Sitasi Fakultas"
+              faktor2="Peluang Kerja"
+              onChange={handleChange30}
+              radioName="question30"
+            />
+            <Skala
+              no="31. "
+              question="Faktor Rasio Fakultas Internasional vs Faktor Rasio Mahasiswa Internasional. Mana yang lebih penting?"
+              faktor1="Rasio Fakultas Internasional"
+              faktor2="Rasio Mahasiswa Internasional"
+              onChange={handleChange31}
+              radioName="question31"
+            />
+            <Skala
+              no="32. "
+              question="Faktor Rasio Fakultas Internasional vs Faktor Jaringan Penelitian Internasional. Mana yang lebih penting?"
+              faktor1="Rasio Fakultas Internasional"
+              faktor2="Jaringan Penelitian Internasional"
+              onChange={handleChange32}
+              radioName="question32"
+            />
+            <Skala
+              no="33. "
+              question="Faktor Rasio Fakultas Internasional vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Rasio Fakultas Internasional"
+              faktor2="Peluang Kerja"
+              onChange={handleChange33}
+              radioName="question33"
+            />
+            <Skala
+              no="34. "
+              question="Faktor Rasio Mahasiswa Internasional vs Faktor Jaringan Penelitian Internasional. Mana yang lebih penting?"
+              faktor1="Rasio Mahasiswa Internasional"
+              faktor2="Jaringan Penelitian Internasional"
+              onChange={handleChange34}
+              radioName="question34"
+            />
+            <Skala
+              no="35. "
+              question="Faktor Rasio Mahasiswa Internasional vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Rasio Mahasiswa Internasional"
+              faktor2="Peluang Kerja"
+              onChange={handleChange35}
+              radioName="question35"
+            />
+            <Skala
+              no="36. "
+              question="Faktor Jaringan Penelitian Internasional vs Faktor Peluang Kerja. Mana yang lebih penting?"
+              faktor1="Jaringan Penelitian Internasional"
+              faktor2="Peluang Kerja"
+              onChange={handleChange36}
+              radioName="question36"
             />
           </div>
 

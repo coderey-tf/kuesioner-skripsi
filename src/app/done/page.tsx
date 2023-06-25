@@ -16,6 +16,7 @@ export default function Done() {
     return () => {
       clearTimeout(timeoutId);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="flex flex-col justify-center items-center mt-32">

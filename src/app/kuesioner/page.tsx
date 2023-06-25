@@ -65,50 +65,77 @@ export default function Kuesioner() {
               </li>
 
               <li>
-                <span className="font-semibold">2. Faktor Reputasi Kampus</span>
+                <span className="font-semibold">
+                  2. Faktor Reputasi Akademik
+                </span>
                 <p className="indent-4 pl-2">
-                  Reputasi kampus diukur berdasarkan keberhasilan mahasiswa
-                  maupun alumni dalam karir mereka dan peringkat universitas di
-                  tingkat nasional dan internasional.
+                  Faktor ini mencerminkan pandangan masyarakat akademik global
+                  terhadap kualitas pendidikan dan riset yang dilakukan oleh
+                  universitas.
                 </p>
               </li>
               <li>
                 <span className="font-semibold">
-                  3. Faktor Ketersediaan Beasiswa
+                  3. Faktor Reputasi Pekerja
                 </span>
                 <p className="indent-4 pl-2">
-                  Ketersediaan beasiswa untuk mahasiswa S2, termasuk beasiswa
-                  pemerintah, beasiswa dari universitas, dan beasiswa dari
-                  lembaga swasta atau yayasan.
+                  Indikator ini menggambarkan persepsi perusahaan dan pemberi
+                  kerja terhadap kualitas lulusan universitas.
                 </p>
               </li>
               <li>
                 <span className="font-semibold">
-                  4. Faktor Fasilitas Pendidikan
+                  4. Faktor Rasio Mahasiswa Fakultas
                 </span>
                 <p className="indent-4 pl-2">
-                  Fasilitas pendidikan yang tersedia di universitas, termasuk
-                  perpustakaan, laboratorium, pusat riset, studio seni, dan
-                  fasilitas olahraga.
+                  Indikator ini mengukur jumlah mahasiswa dalam suatu
+                  universitas dibandingkan dengan jumlah dosen atau fakultas
+                  yang ada.
+                </p>
+              </li>
+              <li>
+                <span className="font-semibold">5. Faktor Sitasi Fakultas</span>
+                <p className="indent-4 pl-2">
+                  Indikator ini mencerminkan pengaruh riset yang dilakukan oleh
+                  fakultas universitas.
                 </p>
               </li>
               <li>
                 <span className="font-semibold">
-                  5. Faktor Kualitas Akademik
+                  6. Faktor Rasio Fakultas Internasional
                 </span>
                 <p className="indent-4 pl-2">
-                  Kualitas akademik universitas diukur berdasarkan kualitas
-                  pengajaran, kualitas penelitian, dan kualitas publikasi ilmiah
-                  yang dihasilkan oleh fakultas dan mahasiswa.
+                  Indikator ini mengukur proporsi dosen internasional dalam
+                  suatu universitas.
                 </p>
               </li>
               <li>
-                <span className="font-semibold">6. Faktor Peluang Kerja</span>
+                <span className="font-semibold">
+                  7. Faktor Mahasiswa Internasional
+                </span>
                 <p className="indent-4 pl-2">
-                  Peluang kerja yang tersedia untuk lulusan dari universitas
-                  tersebut, termasuk keterkaitan dengan perusahaan atau
-                  industri, dan prospek karir di bidang yang relevan dengan
-                  program studi.
+                  Indikator ini menggambarkan jumlah mahasiswa internasional
+                  dalam suatu universitas dibandingkan dengan total jumlah
+                  mahasiswa.
+                </p>
+              </li>
+              <li>
+                <span className="font-semibold">
+                  8. Faktor Jaringan Penelitian Internasional
+                </span>
+                <p className="indent-4 pl-2">
+                  Indikator ini mengevaluasi tingkat kolaborasi riset
+                  universitas dengan lembaga atau mitra internasional. Hal ini
+                  mencerminkan kemampuan universitas untuk berkontribusi pada
+                  riset berskala global dan berbagi pengetahuan secara lintas
+                  negara.
+                </p>
+              </li>
+              <li>
+                <span className="font-semibold">9. Faktor Peluang Kerja</span>
+                <p className="indent-4 pl-2">
+                  Indikator ini mengukur tingkat kesuksesan lulusan universitas
+                  dalam mendapatkan pekerjaan.
                 </p>
               </li>
             </ul>
